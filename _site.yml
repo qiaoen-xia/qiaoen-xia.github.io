@@ -11,6 +11,9 @@ navbar:
       href: resume.html
     - text: "Personal Life"
       href: personal_life.html
+    - text: "Dashboard"
+      href: dashboard.html
+  right:
   right:
     - icon: fa-envelope
       href: mailto:qx2277@cumc.columbia.edu
