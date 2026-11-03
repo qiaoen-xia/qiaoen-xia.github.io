@@ -1,0 +1,23 @@
+
+name: "personal-website"
+output_dir: "."
+
+navbar:
+  title: "Qiaoen Xia"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Resume"
+      href: resume.html
+    - text: "Personal Life"
+      href: personal_life.html
+  right:
+    - icon: fa-envelope
+      href: mailto:qx2277@cumc.columbia.edu
+    - icon: fa-github
+      href: https://github.com/qiaoen-xia
+
+output:
+  html_document:
+    theme: flatly
+    highlight: tango
