@@ -38,7 +38,7 @@ top_aisles =
   slice_max(n_products, n = 12)
 ```
 
-Column {data-width=650}
+Row
 -----------------------------------------------------------------------
 
 ### Most Popular Grocery Aisles
@@ -59,7 +59,7 @@ top_aisles |>
   )
 ```
 
-Column {data-width=450}
+Row
 -----------------------------------------------------------------------
 
 ### Purchase Frequency vs. Reorder Rate
@@ -86,6 +86,8 @@ aisle_summary |>
                  tickformat = ".0%")
   )
 ```
+Row
+-----------------------------------------------------------------------
 
 ### Reorder Rates by Department
 This box plot compares the distributions of aisle-level reorder rates across grocery departments. Each box summarizes the variation in reorder rates among aisles within the same department, allowing comparisons of their medians and spread.
