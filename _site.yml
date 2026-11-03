@@ -14,7 +14,6 @@ navbar:
     - text: "Dashboard"
       href: dashboard.html
   right:
-  right:
     - icon: fa-envelope
       href: mailto:qx2277@cumc.columbia.edu
     - icon: fa-github
