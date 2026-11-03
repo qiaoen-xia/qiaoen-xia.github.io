@@ -1,0 +1,89 @@
+---
+title: "Resume"
+---
+
+# Education
+
+### Columbia University, Mailman School of Public Health
+**Master of Science in Biostatistics | Theory and Methods Track**
+
+*New York, NY | September 2026 – May 2028 (Expected)*
+
+### McGill University
+**Bachelor of Science | Major in Statistics, Minor in Economics**
+
+*Montreal, Canada | August 2022 – May 2026*
+
+
+
+---
+
+# Research Experience
+
+### Integrated Analysis of HPV & DNA Methylation for Cervical Cancer Screening
+
+**Research Assistant | McGill University Gerald Bronfman Department of Oncology & St. Mary's Research Center**
+
+*June 2025 – August 2025*
+
+Supervisors: Prof. Anita Koushik & Prof. Mariam El-Zein, Division of Cancer Epidemiology
+
+
+
+### Spatial Transcriptomics: Multi-Slice Alignment Using SANTO
+
+**Research Assistant | McGill Statistical Genomics and Intelligence Learning Lab**
+
+*May 2025 – August 2025*
+
+Supervisor: Prof. Qihuang Zhang, Department of Biostatistics
+
+
+---
+
+# Consulting Projects
+
+*McGill Statistics Practicum & CDSI*
+
+### Predictive Maintenance Analytics for Forklift Tire Replacement – Michelin
+
+**Statistical Consultant**
+
+*January 2026 – April 2026*
+
+Supervisor: Prof. Jose Correa, Department of Mathematics and Statistics
+
+
+
+### Matched Clinical Data Analysis of Inherited Thrombophilia and SPCT
+
+**Statistical Consultant**
+
+*March 2026 – April 2026*
+
+Supervisor: Prof. Jose Correa, Department of Mathematics and Statistics
+
+
+
+### Multiple Imputation & Clinical Analysis of Autoimmune Disease Prevalence
+
+**Statistical Consultant**
+
+*January 2026 – February 2026*
+
+Supervisor: Prof. Jose Correa, Department of Mathematics and Statistics
+
+
+---
+
+
+
+# Skills
+
+**Programming:** Python, R, SAS
+
+**Languages:**
+
+- English (Bilingual)
+- Mandarin (Native)
+- French (Elementary)
