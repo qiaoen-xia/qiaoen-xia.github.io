@@ -6,3 +6,100 @@ output:
     vertical_layout: fill
 ---
 
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+```
+
+
+Data Overview:
+
+This dashboard explores purchasing patterns in the Instacart dataset from the p8105.datasets package. The analysis focuses on product purchase frequency and reorder behavior across grocery aisles and departments.
+
+To reduce the complexity of the dataset, purchase records were aggregated by department and aisle. Only aisles with at least 100 purchase records were retained. The bar chart further focuses on the 12 aisles with the highest purchase counts.
+```{r data, include=FALSE}
+data("instacart")
+
+aisle_summary =
+  instacart |>
+  group_by(department, aisle) |>
+  summarize(
+    n_products = n(),
+    reorder_rate = mean(reordered == 1, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  filter(n_products >= 100)
+
+top_aisles =
+  aisle_summary |>
+  slice_max(n_products, n = 12)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Most Popular Grocery Aisles
+
+```{r bar_plot}
+top_aisles |>
+  arrange(n_products) |>
+  mutate(aisle = factor(aisle, levels = aisle)) |>
+  plot_ly(
+    x = ~n_products,
+    y = ~aisle,
+    type = "bar",
+    orientation = "h"
+  ) |>
+  layout(
+    xaxis = list(title = "Number of Purchased Products"),
+    yaxis = list(title = "")
+  )
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Purchase Frequency vs. Reorder Rate
+
+```{r scatter_plot}
+aisle_summary |>
+  plot_ly(
+    x = ~n_products,
+    y = ~reorder_rate,
+    type = "scatter",
+    mode = "markers",
+    text = ~aisle,
+    hovertemplate = paste(
+      "%{text}",
+      "<br>Products: %{x}",
+      "<br>Reorder rate: %{y:.1%}",
+      "<extra></extra>"
+    )
+  ) |>
+  layout(
+    xaxis = list(title = "Number of Purchased Products"),
+    yaxis = list(title = "Reorder Rate",
+                 tickformat = ".0%")
+  )
+```
+
+### Reorder Rates by Department
+
+```{r box_plot}
+aisle_summary |>
+  plot_ly(
+    x = ~department,
+    y = ~reorder_rate,
+    type = "box",
+    color = ~department,
+    showlegend = FALSE
+  ) |>
+  layout(
+    xaxis = list(title = "Department"),
+    yaxis = list(title = "Aisle Reorder Rate",
+                 tickformat = ".0%")
+  )
+```
