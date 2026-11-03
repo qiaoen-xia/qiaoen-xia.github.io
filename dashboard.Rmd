@@ -42,7 +42,6 @@ Row
 -----------------------------------------------------------------------
 
 ### Most Popular Grocery Aisles
-This bar chart displays the 12 aisles with the highest number of purchase records. Longer bars indicate greater purchase frequency. The chart highlights which grocery categories contribute most to the observed shopping activity.
 ```{r bar_plot}
 top_aisles |>
   arrange(n_products) |>
@@ -63,7 +62,6 @@ Row
 -----------------------------------------------------------------------
 
 ### Purchase Frequency vs. Reorder Rate
-Each point represents a grocery aisle. The horizontal axis shows its total number of purchase records, while the vertical axis represents the proportion of purchases marked as reordered. Hovering over a point reveals the corresponding aisle.
 
 ```{r scatter_plot}
 aisle_summary |>
@@ -90,7 +88,6 @@ Row
 -----------------------------------------------------------------------
 
 ### Reorder Rates by Department
-This box plot compares the distributions of aisle-level reorder rates across grocery departments. Each box summarizes the variation in reorder rates among aisles within the same department, allowing comparisons of their medians and spread.
 
 ```{r box_plot}
 aisle_summary |>
